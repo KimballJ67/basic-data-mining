@@ -15,7 +15,7 @@ Thus far, I've added one method of vectorization and one method of dimensionalit
 reduction. However, we should add other techniques, such as matrix sketching, in 
 the future. 
 
-##GENERAL PATTERN 
+## GENERAL PATTERN 
 
 My vectorization code outputs two files: one is a CSV file where each row contains 
 a vector representing one book. The other is a a TXT file of book names. Line i in 
@@ -38,9 +38,9 @@ feeding the output of one dimensionality technique into the input of another tec
 
 The following sections list and describe the code for each stage of the project. 
 
-##VECTORIZATION CODE 
+## VECTORIZATION CODE 
 
-###1. k-Grams 
+### 1. k-Grams 
 	The java file kGrams.java contains my code for using k-grams to vectorize
 the books. It takes four command line arguments: the directory where the books' text
 files are stored, the name of the file to which output should be written, the value
@@ -59,9 +59,9 @@ skip. If books from other sources are used, this program will require modificati
 	I've left some extraneous prints in the code. Feel free to remove them or
 comment them out. 
 
-##DIMENSIONALITY REDUCTION CODE 
+## DIMENSIONALITY REDUCTION CODE 
 
-###1. PCA 
+### 1. PCA 
 
 	The Python file PCA.py contains my code for running PCA on a data file. It takes
 four command line arguments: the name of the CSV file containing the data to reduce, the
@@ -75,9 +75,9 @@ write this reduced data to the file Reduced.csv.
 	I left a statement in the code that prints out the number of columns in the data
 matrix you're reducing. Feel free to comment it out if it annoys you. 
 
-##CLUSTERING CODE 
+## CLUSTERING CODE 
 
-###1. Lloyd's 
+### 1. Lloyd's 
 
 	The Python file Lloyds.py contains my code for running Lloyd's clustering algorithm 
 on a data file. It takes five command-line arguments: the name of the CSV file containing the
@@ -95,7 +95,7 @@ Python3 Lloyds.py Reduced.csv Vectors_Names.txt 5 Clusters.txt
 followed by a colon and a newline. Each subsequent line will contain the name of a book in 
 that cluster. Clusters will be separated by empty new lines. 
 
-###2. Mixture of Gaussians 
+### 2. Mixture of Gaussians 
 
 	The Python file MixGauss.py contains my code for calculating a mixture of Gaussians 
 clustering for the data. It uses an expectation maximization algorithm. It takes five command-
@@ -115,7 +115,7 @@ associated with each cluster (as before). Now, however, each cluster will contai
 book has at least 10 percent weight in that cluster, so books can appear in multiple clusters (unlike 
 in Lloyd's algorithm). 
 
-##RESULTS 
+## RESULTS 
 
 Descriptions of the various output files produced by the above code can be found in the files 
 "Cluster File Descriptions.docx" and "Dimension Reduced File Descriptions.docx". "Dimension Reduced 
@@ -123,7 +123,7 @@ Vector Data" contains the outputs of the PCA code. The folder "Clusters" contain
 Lloyd's and mixture of Gaussians code. The file "Final Project Poster.pdf" contains an overall 
 description of our results. 
 
-##CHANGES: 
+## CHANGES: 
 
 1. (No longer relevant.) 
 I added a new function to the PCA Python code. Running SVD was slow because it required 
