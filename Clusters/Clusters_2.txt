@@ -1,0 +1,89 @@
+0:
+Peter Pan.txt
+The Great Gatsby.txt
+The Wonderful Wizard of Oz.txt
+The Invisible Man.txt
+The Time Machine.txt
+
+1:
+Moby Dick.txt
+Ulysses.txt
+War and Peace.txt
+Don Quixote.txt
+Ivanhoe.txt
+1001 Arabian Nights Vol. 1.txt
+The Divine Comedy.txt
+Don Juan.txt
+Les Miserables.txt
+The Count of Monte Cristo.txt
+Anna Karenina.txt
+
+2:
+Great Expectations.txt
+A Tale of Two Cities.txt
+Crime and Punishment.txt
+Sense and Sensibility.txt
+Dracula.txt
+Emma.txt
+Pride and Prejudice.txt
+Wuthering Heights.txt
+
+3:
+Poems by Emily Dickenson.txt
+Poirot Investigates.txt
+Aesop's Fables.txt
+A Christmas Carol.txt
+Heart of Darkness.txt
+Poems by Robert Frost.txt
+The Strange Case of Dr. Jekyll and Mr. Hyde.txt
+Treasure Island.txt
+The Jungle Book.txt
+The Mark of Zorro.txt
+
+4:
+A Journey to the Center of the Earth.txt
+The Scarlet Pimpernel.txt
+The Rime of the Ancient Mariner.txt
+The Merry Adventures of Robin Hood.txt
+Macbeth.txt
+20000 Leagues under the Sea.txt
+Hamlet.txt
+Romeo and Juliet.txt
+
+5:
+The Iliad.txt
+The Travels of Marco Polo Vol. 1.txt
+The Bible.txt
+
+6:
+The Man in the Iron Mask.txt
+The Last of the Mohicans.txt
+Beowulf.txt
+Plutarch's Lives Vol. 1.txt
+
+7:
+Canterbury Tales.txt
+Paradise Lost.txt
+The Koran.txt
+
+8:
+Around the World in 80 Days.txt
+The Adventures of Sherlock Holmes.txt
+The Importance of Being Earnest.txt
+Tarzan of the Apes.txt
+King Solomon's Mines.txt
+Grimms' Fairy Tales.txt
+The Adventures of Tom Sawyer.txt
+Adventures of Huckleberry Finn.txt
+Alice in Wonderland.txt
+
+9:
+Gulliver's Travels.txt
+The Three Musketeers.txt
+The Scarlet Letter.txt
+Uncle Tom's Cabin.txt
+Frankenstein.txt
+Jane Eyre.txt
+Poems by Edgar Allen Poe.txt
+The Odyssey.txt
+
