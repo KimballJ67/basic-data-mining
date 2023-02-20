@@ -16,6 +16,7 @@ reduction. However, we should add other techniques, such as matrix sketching, in
 the future. 
 
 ##GENERAL PATTERN 
+
 My vectorization code outputs two files: one is a CSV file where each row contains 
 a vector representing one book. The other is a a TXT file of book names. Line i in 
 the text file contains the name of the book represented by line i in the CSV file. 
@@ -61,6 +62,7 @@ comment them out.
 ##DIMENSIONALITY REDUCTION CODE 
 
 ###1. PCA 
+
 	The Python file PCA.py contains my code for running PCA on a data file. It takes
 four command line arguments: the name of the CSV file containing the data to reduce, the
 dimension to which you would like to reduce the data, and the name of the file to which
@@ -76,6 +78,7 @@ matrix you're reducing. Feel free to comment it out if it annoys you.
 ##CLUSTERING CODE 
 
 ###1. Lloyd's 
+
 	The Python file Lloyds.py contains my code for running Lloyd's clustering algorithm 
 on a data file. It takes five command-line arguments: the name of the CSV file containing the
 data points, the name of a text file containing the data points' labels (line i in this file 
@@ -93,6 +96,7 @@ followed by a colon and a newline. Each subsequent line will contain the name of
 that cluster. Clusters will be separated by empty new lines. 
 
 ###2. Mixture of Gaussians 
+
 	The Python file MixGauss.py contains my code for calculating a mixture of Gaussians 
 clustering for the data. It uses an expectation maximization algorithm. It takes five command-
 line arguments: the name of the CSV file containing the data, the name of the text file contianing
@@ -120,6 +124,7 @@ Lloyd's and mixture of Gaussians code. The file "Final Project Poster.pdf" conta
 description of our results. 
 
 ##CHANGES: 
+
 1. (No longer relevant.) 
 I added a new function to the PCA Python code. Running SVD was slow because it required 
 computing all singular values. I wrote a function to just compute the top k right singular 
