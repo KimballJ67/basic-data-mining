@@ -41,7 +41,8 @@ The following sections list and describe the code for each stage of the project.
 ## VECTORIZATION CODE 
 
 ### 1. k-Grams 
-	The java file kGrams.java contains my code for using k-grams to vectorize
+
+The java file kGrams.java contains my code for using k-grams to vectorize
 the books. It takes four command line arguments: the directory where the books' text
 files are stored, the name of the file to which output should be written, the value
 of k to use, and the number of k-grams to extract from each file. For example, running
@@ -51,19 +52,23 @@ java kGrams Books Vectors 2 10000
 on the command line will pull a random selection of 10,000 2-grams from each file in the
 "Books" directory. It will write its output to the files Vectors.csv and 
 Vectors_Names.txt.
-	This program can be compiled with the command "javac kGrams.java". 
-	This program was written expecting TXT files from Project Gutenberg. Project 
+
+This program can be compiled with the command "javac kGrams.java". 
+
+This program was written expecting TXT files from Project Gutenberg. Project 
 Gutenberg books have a specific header and footer, which this program is designed to 
 skip. If books from other sources are used, this program will require modification. 
-	See the documentation in kGrams.java for more details. 
-	I've left some extraneous prints in the code. Feel free to remove them or
+
+See the documentation in kGrams.java for more details. 
+
+I've left some extraneous prints in the code. Feel free to remove them or
 comment them out. 
 
 ## DIMENSIONALITY REDUCTION CODE 
 
 ### 1. PCA 
 
-	The Python file PCA.py contains my code for running PCA on a data file. It takes
+The Python file PCA.py contains my code for running PCA on a data file. It takes
 four command line arguments: the name of the CSV file containing the data to reduce, the
 dimension to which you would like to reduce the data, and the name of the file to which
 output should be written. For example, running 
@@ -72,14 +77,15 @@ Python3 PCA.py Vectors.csv 3 Reduced.csv
 
 on the command line will reduce the data contained in Vectors.csv to 3 dimensions and then
 write this reduced data to the file Reduced.csv. 
-	I left a statement in the code that prints out the number of columns in the data
+
+I left a statement in the code that prints out the number of columns in the data
 matrix you're reducing. Feel free to comment it out if it annoys you. 
 
 ## CLUSTERING CODE 
 
 ### 1. Lloyd's 
 
-	The Python file Lloyds.py contains my code for running Lloyd's clustering algorithm 
+The Python file Lloyds.py contains my code for running Lloyd's clustering algorithm 
 on a data file. It takes five command-line arguments: the name of the CSV file containing the
 data points, the name of a text file containing the data points' labels (line i in this file 
 should contain the label of the ith data point), the number of clusters to identify, the name
@@ -91,13 +97,13 @@ the following command.
 
 Python3 Lloyds.py Reduced.csv Vectors_Names.txt 5 Clusters.txt 
 
-	Output will be saved in a text file. For each cluster, this file will contain a number
+Output will be saved in a text file. For each cluster, this file will contain a number
 followed by a colon and a newline. Each subsequent line will contain the name of a book in 
 that cluster. Clusters will be separated by empty new lines. 
 
 ### 2. Mixture of Gaussians 
 
-	The Python file MixGauss.py contains my code for calculating a mixture of Gaussians 
+The Python file MixGauss.py contains my code for calculating a mixture of Gaussians 
 clustering for the data. It uses an expectation maximization algorithm. It takes five command-
 line arguments: the name of the CSV file containing the data, the name of the text file contianing
 the data points' labels (the ith line in this file should correspond to the ith data point), the 
@@ -107,7 +113,7 @@ p--the default--for k-means++. For instance, you could run this code with the fo
 
 Python3 MixGauss.py Reduced.csv Vectors_Names.txt 5 Gauss_Clusters.txt 
 
-	The output file will be a text file that is divided into two parts. The first part will 
+The output file will be a text file that is divided into two parts. The first part will 
 contain each a line for each book in the data file. This line will have the book's name followed by 
 a colon. After the colon will come a tab-separated list of the book's weight for each cluster. 
 Following the weight section of the file will be the cluster section. This will include the files
