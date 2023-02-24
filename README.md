@@ -1,4 +1,4 @@
-# Basic Data Mining
+# PURPOSE
 
 This contains the code for Kimball Johnston and Seth Doubek's data mining final project. 
 It only contains code written by Kimball Johnston and does not contain any of the 
@@ -6,7 +6,7 @@ code written by Seth Doubek. The purpose of this repository is to share this cod
 who is interested in basic data mining techniques such as clustering and dimensionality
 reduction. 
 
-# Code Description 
+# CODE DESCRIPTION
 
 The code for this project can be divided into three stages: vectorization, 
 dimensionality reduction, and clustering. 
